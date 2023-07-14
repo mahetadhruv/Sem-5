@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover</title>
+</head>
+<style>
+    .hover li ul{
+    display: none;
+}
+.hover:hover li ul{
+    display: block;
+    color: blue;
+}
+
+.hover li ul ul li{
+    display: none;
+}
+
+.hover li ul:hover ul li{
+    display: block;
+    color: red;
+}
+</style>
+<body>
+    <ul class="hover">
+        <li>
+            Option 1
+            <ul>
+                <li>
+                    Sub Option 1
+                    <ul>
+                        <li>
+                            Sub Sub Option 1
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>

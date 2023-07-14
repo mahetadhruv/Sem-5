@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical 5</title>
+</head>
+<style>
+    table{
+        margin-top: 15%;
+        margin-left: 37%;
+    }
+</style>
+
+<body style="background-color: #659EC7;">
+    <table border=5PX style="background-color: #ADD8E6; border-radius: 20px; border-color: red; padding: 15px;">
+        <form>
+        <tr>
+            <td style="border-radius: 5px;">
+                <label style="font-size: larger;">Name</label>
+            </td>
+            <td style="border-radius: 5px;">
+                <input type="text" style="font-size: larger;" placeholder="Enter your name">
+            </td>
+        </tr>
+        <tr>
+            <td style="border-radius: 5px;">
+                <label style="font-size: larger;">Password</label>
+            </td>
+            <td style="border-radius: 5px;">
+                <input type="password" id="myInput" style="font-size: larger;" placeholder="Enter your password">
+                <input type="checkbox" onclick="myFunction()">Show Password
+            </td>
+        </tr>
+        <tr>
+            <td style="border-radius: 5px;">
+                <label style="font-size: larger;">Phone</label>
+            </td>
+            <td style="border-radius: 5px;">
+                <input type="tel" style="font-size: larger;" placeholder="Enter your Phone number" maxlength="10">
+            </td>
+        </tr>
+        <tr>
+            <td style="border-radius: 5px;">
+                <label style="font-size: larger;">Email</label>
+            </td>
+            <td style="border-radius: 5px;">
+                <input type="email" style="font-size: larger;" placeholder="Enter your email">
+            </td>
+        </tr>
+    </form>
+</table>
+</body>
+
+</html>
+
+<script>function myFunction() {
+    var x = document.getElementById("myInput");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+  }</script>
